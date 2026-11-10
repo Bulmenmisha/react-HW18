@@ -1,0 +1,169 @@
+.contacts {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 20px 120px;
+  display: grid;
+  grid-template-columns: minmax(0, 520px) 320px;
+  column-gap: 56px;
+  align-items: start;
+}
+
+.info {
+  display: contents;
+}
+
+.title {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ececec;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+}
+
+.list {
+  grid-column: 1 / -1;
+  margin: 72px 0 40px;
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #8a8a8a;
+}
+
+.form {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 28px;
+}
+
+.input {
+  min-width: 0;
+  width: 100%;
+  padding: 14px 16px;
+  font-family: inherit;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  background: #f7f7f7;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #8a8a8a;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2px #2b2c2e;
+}
+
+.message {
+  grid-column: 1 / -1;
+  min-height: 80px;
+  padding-top: 14px;
+}
+
+.button {
+  grid-column: 2;
+  justify-self: end;
+  padding: 12px 22px;
+  font-family: inherit;
+  font-size: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #0d0d18;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #33334a;
+}
+
+.success {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 13px;
+  color: #2e7d32;
+}
+
+.socials {
+  grid-column: 2;
+  grid-row: 3;
+  padding: 18px 24px 32px;
+  border-radius: 6px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.socialsTitle {
+  margin: 0 0 22px;
+  font-size: 13px;
+  color: #111;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 26px;
+  transition: transform 0.15s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.snapchat {
+  background: #fffc00;
+  color: #ffffff;
+}
+
+.snapchat svg {
+  stroke: #000000;
+  stroke-width: 18px;
+}
+
+.facebook {
+  color: #1877f2;
+  font-size: 38px;
+}
+
+.x {
+  background: #000000;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .contacts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .socials {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 40px;
+  }
+
+  .button {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}

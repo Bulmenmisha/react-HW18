@@ -1,0 +1,79 @@
+/* Баннер по макету: все размеры в % и cqw, чтобы он масштабировался целиком */
+.news {
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  aspect-ratio: 525 / 176;
+  overflow: hidden;
+  background: #a3a3a3;
+  font-family: 'Inter', 'Montserrat', Arial, sans-serif;
+}
+
+.blue {
+  position: absolute;
+  inset: 0 0 45% 0;
+  background: #6175b0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 2; /* синяя полоса перекрывает нижние кроссовки, как в макете */
+}
+
+.word {
+  position: absolute;
+  left: 0.3%;
+  font-weight: 800;
+  font-size: 12cqw; /* высота заглавных = 26% высоты баннера */
+  line-height: 1;
+  letter-spacing: -0.02em;
+  z-index: 3;
+}
+
+.one {
+  top: 24.07%; /* низ букв ONE ровно по нижней границе синей полосы (55%) */
+  color: #2c3c6c;
+}
+
+.air {
+  top: 65.4%; /* верх букв AIR на 70% высоты, как в макете */
+  color: #6e6e6e;
+}
+
+.topShoes {
+  position: absolute;
+  left: 21%;
+  top: 1%;
+  width: 22%;
+  z-index: 4;
+}
+
+.bottomShoes {
+  position: absolute;
+  left: 55%;
+  top: 46%;
+  width: 42%;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.35));
+  z-index: 1; /* «выглядывают» из-под синей полосы */
+}
+
+.sale {
+  position: absolute;
+  left: 56%;
+  top: 5%;
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 800;
+  line-height: 1;
+  z-index: 4;
+}
+
+.upTo {
+  font-size: 3.6cqw;
+}
+
+.percent {
+  margin-top: 1.2cqw;
+  font-size: 8.4cqw;
+  white-space: nowrap;
+}

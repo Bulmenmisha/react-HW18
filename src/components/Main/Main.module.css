@@ -1,0 +1,24 @@
+.main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 20px 100px;
+}
+
+.title {
+  margin: 48px 0 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 290px));
+  justify-content: space-between;
+  gap: 40px 28px;
+}
+
+.error {
+  color: #e53935;
+}

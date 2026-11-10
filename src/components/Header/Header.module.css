@@ -1,0 +1,42 @@
+.header {
+  background: #2b2c2e;
+}
+
+.inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav a {
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #ffffff !important;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    gap: 20px;
+  }
+}
